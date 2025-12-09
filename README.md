@@ -1,99 +1,156 @@
-📚 Full Stack Open — Solutions & Submissions
+# Full Stack Open — Solutions & Submissions
 
-This repository contains my solutions to the Full Stack Open course by the University of Helsinki.
-The course focuses on modern full-stack web development with JavaScript, React, Node.js, Express, MongoDB, GraphQL, TypeScript, CI/CD, and more.
+> My solutions and notes for the Full Stack Open course (University of Helsinki).  
+> A collection of exercises, projects, and reference implementations that track my progress through the course.
 
-🚀 Course Overview
+---
 
-Full Stack Open covers a wide range of modern web technologies:
+## Table of contents
+- [About](#about)
+- [Course](#course)
+- [What's in this repo](#whats-in-this-repo)
+- [Repository structure](#repository-structure)
+- [Technologies used](#technologies-used)
+- [Getting started](#getting-started)
+- [How to run a part](#how-to-run-a-part)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [Notes & tips](#notes--tips)
+- [Course link](#course-link)
+- [Contact](#contact)
 
-⚛️ React (components, props, state, hooks)
+---
 
-🌐 Communicating with servers (REST APIs, Axios)
+## About
+This repository contains my solutions for the Full Stack Open course. Each course part is stored in its own folder and usually contains exercises, example apps, and a small README describing how to run that specific part.
 
-🗄️ Node.js & Express backend
+Purpose:
+- Track learning progress
+- Keep working solutions and notes
+- Serve as examples and references for future projects
 
-🛢️ MongoDB database
+---
 
-🔐 User authentication / token-based auth
+## Course
+Full Stack Open covers modern full-stack web development topics including:
+- React (components, hooks)
+- Frontend testing (Jest, React Testing Library)
+- HTTP & REST API communication (Axios, fetch)
+- Node.js & Express backends
+- MongoDB (with Mongoose)
+- Authentication (token-based)
+- GraphQL basics
+- TypeScript in full-stack apps
+- CI/CD workflows and testing with Cypress
+- React Native basics
 
-🔄 Testing frontend & backend (Jest, React Testing Library)
+---
 
-🔁 CI/CD & DevOps pipelines
-
-📱 React Native basics
-
-🧩 GraphQL API
-
-✨ TypeScript in full-stack apps
-
-📦 Repository Structure
-
-Each folder corresponds to a Part of the Full Stack Open course:
-
-part0/
-part1/
-part2/
-part3/
-part4/
-part5/
-part6/
-part7/
-part8/
-part9/
-part10/
-...
-
-
-Inside each part, exercises are organized based on the course instructions.
+## What's in this repo
+Top-level folders match the course parts. Inside each part you will typically find the exercises and example projects.
 
 Example:
-
+```
 part1/
  ├── courseinfo/
  ├── unicafe/
  └── anecdotes/
+part2/
+part3/
+...
+```
 
-🛠️ Technologies Used
+---
 
-JavaScript / TypeScript
+## Repository structure
+- part0/ – introductory exercises and notes
+- part1/ … part10/ – course parts, each containing exercises and apps
+- README.md – this file with overview and instructions
 
-React
+(Each `partX/` directory may include its own README with part-specific steps.)
 
-Node.js
+---
 
-Express
+## Technologies used
+- JavaScript & TypeScript
+- React
+- Node.js & Express
+- MongoDB (Mongoose)
+- Vite / Webpack
+- Jest, React Testing Library, Cypress
+- REST & GraphQL
+- Git & GitHub
 
-MongoDB
+---
 
-Vite / Webpack
+## Getting started
+Prerequisites:
+- Node.js (LTS recommended)
+- npm or yarn
+- For backend parts: a running MongoDB (local or cloud)
 
-Jest & Testing Library
+General steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Bhargav-Kiku/Full-Stack-Open-Excercise-Submissions.git
+   cd Full-Stack-Open-Excercise-Submissions
+   ```
+2. Navigate to the part folder you want to run:
+   ```bash
+   cd partX/some-exercise
+   ```
+3. Install dependencies and start (typical):
+   ```bash
+   npm install
+   npm start
+   # or
+   npm run dev
+   ```
+   See that part's README for precise commands — some parts use create-react-app, others use Vite, or a Node backend.
 
-Cypress
+Environment variables:
+- Backend parts often expect MONGODB_URI and PORT. Check the specific part's README or `.env.example` if present.
 
-REST & GraphQL APIs
+---
 
-Git & GitHub
+## How to run a part
+Each part may have a slightly different setup. Common patterns:
+- Frontend React apps: `npm install`, `npm start` (runs local dev server)
+- Backend Node/Express apps: `npm install`, set environment variables (e.g., `MONGODB_URI`), then `npm run dev` or `node index.js`
+- Full-stack examples: run backend and frontend in separate terminals
 
-🎯 Goal of This Repository
+If a part has its own README, follow that first — it contains part-specific instructions.
 
-The main purpose of this repo is to:
+---
 
-Track my progress through the Full Stack Open course
+## Testing
+- Unit tests: `npm test` (where available)
+- E2E: Some parts include Cypress; run `npx cypress open` or `npx cypress run` as documented in the part
+- Linting & formatting may vary per part — check part-specific configs
 
-Store clean and working solutions
+---
 
-Demonstrate my ability to build modern full-stack applications
+## Contributing
+This repo is mainly a personal learning record, but contributions and suggestions are welcome:
+- Open an issue if you spot inaccuracies or improvements
+- Propose small PRs for documentation fixes or added clarifications
 
-Serve as a reference for future personal projects
+If you want me to add badges, CI status, screenshots, or a LICENSE file, I can prepare and push those changes.
 
-📝 Notes
+---
 
-Each part has its own README (if needed) explaining the setup, solution details, and extra notes.
+## Notes & tips
+- Many parts are independent — there is no single unified install across the whole repo.
+- If you get errors starting a backend, double-check the MongoDB connection string and required environment variables.
+- Look for a README inside each `partX/` folder — it often contains the exact run instructions.
 
-Feel free to explore the code. Feedback, issues, and suggestions are always welcome!
+---
 
-📎 Course Link
+## Course link
+Full Stack Open — https://fullstackopen.com/
 
-🔗 https://fullstackopen.com/
+---
+
+## Contact
+Author: Bhargav-Kiku  
+Repository: https://github.com/Bhargav-Kiku/Full-Stack-Open-Excercise-Submissions
