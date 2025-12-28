@@ -1,0 +1,15 @@
+---
+config:
+  theme: neo-dark
+---
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note right of browser: JavaScript adds new note to local list and rerenders UI
+    
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    activate server
+    Note right of browser: Payload: { "content": "...", "date": "..." }
+    server-->>browser: Status Code: 201 Created
+    deactivate server
